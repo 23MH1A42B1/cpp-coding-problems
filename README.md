@@ -1,4 +1,4 @@
-# C++ Daily Practice
+# C++ Coding Problems
 
 This repository contains my daily C++ coding practice. I use Visual Studio Code as my primary editor and regularly push my progress to GitHub.
 
