@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class Node {
+public:
+    int data;      // to store data
+    Node* next;    // to store address (pointer) of next node
+
+    Node(int data) {
+        this->data = data;
+        this->next = nullptr; // initially null
+    }
+};
+
+int main() {
+    // Create nodes
+    Node* first = new Node(10);
+    Node* second = new Node(20);
+    Node* third = new Node(30);
+
+    // Link nodes
+    first->next = second;
+    second->next = third;
+
+    // Print data by traversing
+    Node* current = first;
+    while (current != nullptr) {
+        cout << current->data << endl;
+        current = current->next;
+    }
+
+    return 0;
+}
